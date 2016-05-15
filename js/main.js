@@ -6,7 +6,7 @@ function validateContactData(name, email, msg) {
 }
 
 function sendMessage(name, email, msg) {
-    if (validateContactData(name, email, msg)) {
+    if (!validateContactData(name, email, msg)) {
         alert("Your name, email or message is not correct!");
     } else {
         alert("Your message was sent!");
